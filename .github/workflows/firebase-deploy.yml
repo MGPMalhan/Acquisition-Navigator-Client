@@ -12,7 +12,7 @@ jobs:
     # Add this defaults section
     defaults:
       run:
-        working-directory: ./client
+        working-directory: client
 
     steps:
       - name: Checkout
