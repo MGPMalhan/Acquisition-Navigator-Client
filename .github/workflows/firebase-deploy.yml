@@ -1,5 +1,4 @@
 name: Deploy to Firebase
-working-directory: ./client
 
 on:
   push:
@@ -9,6 +8,11 @@ on:
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+
+    # Add this defaults section
+    defaults:
+      run:
+        working-directory: ./client
 
     steps:
       - name: Checkout
